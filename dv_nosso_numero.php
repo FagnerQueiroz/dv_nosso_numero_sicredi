@@ -1,7 +1,7 @@
 <?php
 /*Dígito verificador, modulo 11, nosso numero sicredi em php */
 
-sicredi_11($bit, $nosso_numero, $cedente, $posto, $agencia){
+function sicredi_11($bit, $nosso_numero, $cedente, $posto, $agencia){
 $nosso_numero=str_pad($nosso_numero,5,"0",STR_PAD_LEFT);
 $ano=date('y');
 $numero=$agencia[0]*4;
